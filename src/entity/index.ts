@@ -9,7 +9,9 @@ import module from "./module";
 import rating from "./rating";
 import instructor from "./instructor";
 
-const sequelize = new Sequelize(config.database_url);
+const sequelize = new Sequelize(config.database_url, {
+  dialect: "postgres",
+});
 
 const db: {
   [key: string]: any;
