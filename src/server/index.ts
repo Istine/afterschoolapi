@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 app.use(
   cors({
-    origin: ["https://afterschoolapp.vercel.app/"],
+    origin: ["https://afterschoolapp-l7hwzj4r1-istine.vercel.app"],
     credentials: true,
   })
 );
